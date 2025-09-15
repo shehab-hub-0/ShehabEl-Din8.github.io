@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shehab El-Din Ahmed - Data Engineer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0B5FFF',
+                        teal: '#00C2B2',
+                        dark: '#0F172A',
+                        light: '#F7FAFF'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .gradient-bg {
+            background: linear-gradient(135deg, #0B5FFF 0%, #00C2B2 100%);
+        }
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.6s ease-out;
+        }
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="bg-light text-dark font-sans">
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-white/90 backdrop-blur-md z-50 shadow-sm">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4">
+                <div class="text-xl font-bold text-primary">Shehab El-Din Ahmed</div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="text-dark hover:text-primary transition-colors">Home</a>
+                    <a href="#about" class="text-dark hover:text-primary transition-colors">About</a>
+                    <a href="#services" class="text-dark hover:text-primary transition-colors">Services</a>
+                    <a href="#experience" class="text-dark hover:text-primary transition-colors">Experience</a>
+                    <a href="#projects" class="text-dark hover:text-primary transition-colors">Projects</a>
+                    <a href="#contact" class="text-dark hover:text-primary transition-colors">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home" class="min-h-screen flex items-center justify-center bg-gradient-to-br from-light to-white pt-20">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="fade-in">
+                <h1 class="text-5xl md:text-7xl font-bold text-dark mb-4">Shehab El-Din Ahmed</h1>
+                <h2 class="text-2xl md:text-3xl text-primary mb-6">Data Engineer — Big Data & Cloud</h2>
+                <p class="text-xl md:text-2xl text-gray-600 mb-8">I build ETL</p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="#contact" class="gradient-bg text-white px-8 py-4 rounded-xl font-semibold hover:scale-105 hover:shadow-lg transition-all duration-300">Contact Me</a>
+                    <a href="#" class="border-2 border-primary text-primary px-8 py-4 rounded-xl font-semibold hover:bg-primary hover:text-white transition-all duration-300">Open CV</a>
+                </div>
+            </div>
+            
+            <!-- Quick Info -->
+            <div class="mt-16 grid grid-cols-1 md:grid-cols-2 gap-8 max-w-md mx-auto fade-in">
+                <div class="text-center">
+                    <div class="flex justify-center mb-2">
+                        <i data-lucide="map-pin" class="w-6 h-6 text-primary"></i>
+                    </div>
+                    <h3 class="font-semibold text-dark">Location</h3>
+                    <p class="text-gray-600">Beni Suef, Egypt</p>
+                </div>
+                <div class="text-center">
+                    <div class="flex justify-center mb-2">
+                        <i data-lucide="clock" class="w-6 h-6 text-primary"></i>
+                    </div>
+                    <h3 class="font-semibold text-dark">Availability</h3>
+                    <p class="text-gray-600">Freelance & Full-time</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- About Section -->
+        <section id="about" class="py-20 bg-white">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="fade-in">
+                    <h2 class="text-4xl font-bold text-center text-dark mb-12">About Me</h2>
+                    <div class="max-w-4xl mx-auto text-lg text-gray-700 leading-relaxed">
+                        <p class="mb-6">I'm Shehab El-Din Ahmed Mowed, a fast-learning Data Engineer from Beni Suef, Egypt. I specialize in designing and optimizing data pipelines, ETL workflows, and scalable database solutions using Python, SQL, and Apache Airflow.</p>
+                        <p>My main interests are Big Data and Cloud Data Engineering, where I aim to build efficient systems that transform raw data into actionable business insights. I bring curiosity, problem-solving skills, and a continuous learning mindset to every project.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="py-20 bg-light">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="fade-in">
+                    <h2 class="text-4xl font-bold text-center text-dark mb-12">Services</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
+                            <div class="flex justify-center mb-4">
+                                <i data-lucide="code" class="w-12 h-12 text-primary"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-dark mb-4 text-center">Python Development</h3>
+                            <p class="text-gray-600 text-center">Building advanced data applications using Pandas, NumPy, and developing ETL systems.</p>
+                        </div>
+                        <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
+                            <div class="flex justify-center mb-4">
+                                <i data-lucide="zap" class="w-12 h-12 text-primary"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-dark mb-4 text-center">Apache Spark</h3>
+                            <p class="text-gray-600 text-center">Processing big data using Spark for analysis and distributed algorithms.</p>
+                        </div>
+                        <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
+                            <div class="flex justify-center mb-4">
+                                <i data-lucide="activity" class="w-12 h-12 text-primary"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-dark mb-4 text-center">Kafka Systems</h3>
+                            <p class="text-gray-600 text-center">Building real-time data systems using Kafka for streaming and integration.</p>
+                        </div>
+                        <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
+                            <div class="flex justify-center mb-4">
+                                <i data-lucide="database" class="w-12 h-12 text-primary"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-dark mb-4 text-center">Database Management</h3>
+                            <p class="text-gray-600 text-center">Designing and optimizing database systems for performance and scalability.</p>
+                        </div>
+                        <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
+                            <div class="flex justify-center mb-4">
+                                <i data-lucide="cloud" class="w-12 h-12 text-primary"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-dark mb-4 text-center">Cloud Solutions</h3>
+                            <p class="text-gray-600 text-center">Deploying and managing data infrastructure on cloud platforms like AWS.</p>
+                        </div>
+                        <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
+                            <div class="flex justify-center mb-4">
+                                <i data-lucide="bar-chart" class="w-12 h-12 text-primary"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-dark mb-4 text-center">Data Visualization</h3>
+                            <p class="text-gray-600 text-center">Creating interactive dashboards and reports for data insights.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tools & Technologies -->
+        <section class="py-20 bg-white">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="fade-in">
+                    <h2 class="text-4xl font-bold text-center text-dark mb-12">Tools & Technologies</h2>
+                    <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6">
+                        <div class="bg-light p-6 rounded-xl text-center hover:shadow-lg transition-all duration-300">
+                            <div class="text-2xl font-bold text-primary mb-2">Python</div>
+                        </div>
+                        <div class="bg-light p-6 rounded-xl text-center hover:shadow-lg transition-all duration-300">
+                            <div class="text-2xl font-bold text-primary mb-2">SQL</div>
+                        </div>
+                        <div class="bg-light p-6 rounded-xl text-center hover:shadow-lg transition-all duration-300">
+                            <div class="text-2xl font-bold text-primary mb-2">Azure</div>
+                        </div>
+                        <div class="bg-light p-6 rounded-xl text-center hover:shadow-lg transition-all duration-300">
+                            <div class="text-2xl font-bold text-primary mb-2">Kafka</div>
+                        </div>
+                        <div class="bg-light p-6 rounded-xl text-center hover:shadow-lg transition-all duration-300">
+                            <div class="text-2xl font-bold text-primary mb-2">Spark</div>
+                        </div>
+                        <div class="bg-light p-6 rounded-xl text-center hover:shadow-lg transition-all duration-300">
+                            <div class="text-2xl font-bold text-primary mb-2">Hadoop</div>
+                        </div>
+                        <div class="bg-light p-6 rounded-xl text-center hover:shadow-lg transition-all duration-300">
+                            <div class="text-2xl font-bold text-primary mb-2">Airflow</div>
+                        </div>
+                        <div class="bg-light p-6 rounded-xl text-center hover:shadow-lg transition-all duration-300">
+                            <div class="text-2xl font-bold text-primary mb-2">Snowflake</div>
+                        </div>
+                        <div class="bg-light p-6 rounded-xl text-center hover:shadow-lg transition-all duration-300">
+                            <div class="text-2xl font-bold text-primary mb-2">AWS</div>
+                        </div>
+                        <div class="bg-light p-6 rounded-xl text-center hover:shadow-lg transition-all duration-300">
+                            <div class="text-2xl font-bold text-primary mb-2">Docker</div>
+                        </div>
+                        <div class="bg-light p-6 rounded-xl text-center hover:shadow-lg transition-all duration-300">
+                            <div class="text-2xl font-bold text-primary mb-2">Excel</div>
+                        </div>
+                        <div class="bg-light p-6 rounded-xl text-center hover:shadow-lg transition-all duration-300">
+                            <div class="text-2xl font-bold text-primary mb-2">Power BI</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quick Stats -->
+        <section class="py-20 bg-light">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="fade-in">
+                    <h2 class="text-4xl font-bold text-center text-dark mb-12">Quick Stats</h2>
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                        <div class="text-center">
+                            <div class="text-5xl font-bold text-primary mb-2">1</div>
+                            <div class="text-gray-600">Years Experience</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-5xl font-bold text-primary mb-2">3</div>
+                            <div class="text-gray-600">Projects Completed</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-5xl font-bold text-primary mb-2">2</div>
+                            <div class="text-gray-600">Articles Published</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-5xl font-bold text-primary mb-2">3</div>
+                            <div class="text-gray-600">Satisfied Clients</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Professional Experience -->
+        <section id="experience" class="py-20 bg-white">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="fade-in">
+                    <h2 class="text-4xl font-bold text-center text-dark mb-12">Professional Experience</h2>
+                    <div class="max-w-4xl mx-auto">
+                        <div class="bg-light p-8 rounded-2xl shadow-lg">
+                            <h3 class="text-2xl font-bold text-dark mb-2">Data Engineer — Digital Egypt Pioneers Initiative (DEPI)</h3>
+                            <p class="text-primary font-semibold mb-4">2024 - Present</p>
+                            <p class="text-gray-700">Building ETL pipelines using Airflow and Spark, managing big data architecture, and analyzing data to extract valuable insights.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Projects -->
+        <section id="projects" class="py-20 bg-light">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="fade-in">
+                    <h2 class="text-4xl font-bold text-center text-dark mb-12">Featured Projects</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                        <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
+                            <div class="flex justify-center mb-4">
+                                <i data-lucide="trending-up" class="w-12 h-12 text-primary"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-dark mb-4 text-center">Titanic Data Analysis</h3>
+                            <p class="text-gray-600 text-center">Advanced exploratory analysis using Python and Pandas with interactive visualizations.</p>
+                        </div>
+                        <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
+                            <div class="flex justify-center mb-4">
+                                <i data-lucide="git-branch" class="w-12 h-12 text-primary"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-dark mb-4 text-center">ETL Pipeline</h3>
+                            <p class="text-gray-600 text-center">Building ETL pipeline using Airflow for data processing and storage.</p>
+                        </div>
+                        <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
+                            <div class="flex justify-center mb-4">
+                                <i data-lucide="monitor" class="w-12 h-12 text-primary"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-dark mb-4 text-center">Interactive Dashboard</h3>
+                            <p class="text-gray-600 text-center">Interactive data visualization using Dash and Plotly.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-20 bg-white">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="fade-in">
+                    <h2 class="text-4xl font-bold text-center text-dark mb-12">Contact Me</h2>
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                        <!-- Contact Form -->
+                        <div>
+                            <form id="contactForm" class="space-y-6">
+                                <div>
+                                    <input type="text" placeholder="Full Name" class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:border-primary focus:outline-none transition-colors">
+                                </div>
+                                <div>
+                                    <input type="email" placeholder="Email Address" class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:border-primary focus:outline-none transition-colors">
+                                </div>
+                                <div>
+                                    <textarea placeholder="Your Message" rows="6" class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:border-primary focus:outline-none transition-colors resize-none"></textarea>
+                                </div>
+                                <button type="submit" class="gradient-bg text-white px-8 py-4 rounded-xl font-semibold hover:scale-105 hover:shadow-lg transition-all duration-300 w-full">Send Message</button>
+                            </form>
+                        </div>
+                        
+                        <!-- Contact Links -->
+                        <div class="space-y-6">
+                            <a href="https://www.facebook.com/shehab.ahmed.711804?rdid=0UFfXOz5KaukQ28J&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1BEzMmU6iu%2F#" target="_blank" rel="noopener noreferrer" class="flex items-center space-x-4 p-4 bg-light rounded-xl hover:shadow-lg transition-all duration-300">
+                                <i data-lucide="facebook" class="w-6 h-6 text-primary"></i>
+                                <span class="text-dark font-semibold">Facebook</span>
+                            </a>
+                            <a href="https://www.linkedin.com/in/shehab-eldinahmed" target="_blank" rel="noopener noreferrer" class="flex items-center space-x-4 p-4 bg-light rounded-xl hover:shadow-lg transition-all duration-300">
+                                <i data-lucide="linkedin" class="w-6 h-6 text-primary"></i>
+                                <span class="text-dark font-semibold">LinkedIn</span>
+                            </a>
+                            <a href="https://github.com/shehab-hub-0" target="_blank" rel="noopener noreferrer" class="flex items-center space-x-4 p-4 bg-light rounded-xl hover:shadow-lg transition-all duration-300">
+                                <i data-lucide="github" class="w-6 h-6 text-primary"></i>
+                                <span class="text-dark font-semibold">GitHub</span>
+                            </a>
+                            <a href="mailto:shahbahmed56p@gmail.com" class="flex items-center space-x-4 p-4 bg-light rounded-xl hover:shadow-lg transition-all duration-300">
+                                <i data-lucide="mail" class="w-6 h-6 text-primary"></i>
+                                <span class="text-dark font-semibold">shahbahmed56p@gmail.com</span>
+                            </a>
+                            <a href="https://wa.me/201289910575" target="_blank" rel="noopener noreferrer" class="flex items-center space-x-4 p-4 bg-light rounded-xl hover:shadow-lg transition-all duration-300">
+                                <i data-lucide="message-circle" class="w-6 h-6 text-primary"></i>
+                                <span class="text-dark font-semibold">WhatsApp: 01289910575</span>
+                            </a>
+                            <a href="tel:01011457319" class="flex items-center space-x-4 p-4 bg-light rounded-xl hover:shadow-lg transition-all duration-300">
+                                <i data-lucide="phone" class="w-6 h-6 text-primary"></i>
+                                <span class="text-dark font-semibold">Phone: 01011457319</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-8">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p class="text-lg font-semibold mb-2">Shehab El-Din Ahmed</p>
+            <p class="text-gray-400">© 2025 Shehab El-Din Ahmed</p>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+
+        // Smooth scroll animation on page load
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        // Observe all fade-in elements
+        document.querySelectorAll('.fade-in').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Contact form submission
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Message sent!');
+        });
+
+        // Mobile menu toggle (if needed)
+        const mobileMenuButton = document.querySelector('[data-mobile-menu-button]');
+        const mobileMenu = document.querySelector('[data-mobile-menu]');
+        
+        if (mobileMenuButton && mobileMenu) {
+            mobileMenuButton.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+        }
+    </script>
+</body>
+</html>
