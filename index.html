@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shehab El-Din Ahmed - Data Engineer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0B5FFF',
+                        teal: '#00C2B2',
+                        dark: '#0F172A',
+                        lightBg: '#F7FAFF'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-lightBg text-dark font-sans">
+    <!-- Header/Hero Section -->
+    <header class="bg-gradient-to-br from-primary to-teal text-white py-20 px-4">
+        <div class="max-w-6xl mx-auto text-center">
+            <h1 class="text-4xl md:text-6xl font-bold mb-4">Shehab El-Din Ahmed</h1>
+            <h2 class="text-xl md:text-2xl mb-4 opacity-90">Data Engineer — Big Data & Cloud</h2>
+            <p class="text-lg md:text-xl mb-8 opacity-80">I build ETL</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <button onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})" 
+                        class="bg-white text-primary px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
+                    Contact Me
+                </button>
+                <a href="#" class="bg-transparent border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-primary transition-colors">
+                    Open CV
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Quick Info Section -->
+        <section class="py-16 px-4 bg-white">
+            <div class="max-w-6xl mx-auto">
+                <div class="grid md:grid-cols-2 gap-8 text-center">
+                    <div class="bg-lightBg p-6 rounded-lg shadow-sm">
+                        <h3 class="text-lg font-semibold mb-2">Location</h3>
+                        <p class="text-gray-600">Beni Suef, Egypt</p>
+                    </div>
+                    <div class="bg-lightBg p-6 rounded-lg shadow-sm">
+                        <h3 class="text-lg font-semibold mb-2">Availability</h3>
+                        <p class="text-gray-600">Freelance & Full-time</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Me Section -->
+        <section class="py-16 px-4">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-3xl md:text-4xl font-bold mb-8">About Me</h2>
+                <div class="text-lg leading-relaxed space-y-4 text-gray-700">
+                    <p>I'm Shehab El-Din Ahmed Mowed, a fast-learning Data Engineer from Beni Suef, Egypt. I specialize in designing and optimizing data pipelines, ETL workflows, and scalable database solutions using Python, SQL, and Apache Airflow.</p>
+                    <p>My main interests are Big Data and Cloud Data Engineering, where I aim to build efficient systems that transform raw data into actionable business insights. I bring curiosity, problem-solving skills, and a continuous learning mindset to every project.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="py-16 px-4 bg-white">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Services</h2>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="bg-lightBg p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                        <h3 class="text-xl font-semibold mb-3 text-primary">Python Development</h3>
+                        <p class="text-gray-600">Building advanced data applications using Pandas, NumPy, and developing ETL systems.</p>
+                    </div>
+                    <div class="bg-lightBg p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                        <h3 class="text-xl font-semibold mb-3 text-primary">Apache Spark</h3>
+                        <p class="text-gray-600">Processing big data using Spark for analysis and distributed algorithms.</p>
+                    </div>
+                    <div class="bg-lightBg p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                        <h3 class="text-xl font-semibold mb-3 text-primary">Kafka Systems</h3>
+                        <p class="text-gray-600">Building real-time data systems using Kafka for streaming and integration.</p>
+                    </div>
+                    <div class="bg-lightBg p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                        <h3 class="text-xl font-semibold mb-3 text-primary">Database Management</h3>
+                        <p class="text-gray-600">Designing and optimizing database systems for performance and scalability.</p>
+                    </div>
+                    <div class="bg-lightBg p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                        <h3 class="text-xl font-semibold mb-3 text-primary">Cloud Solutions</h3>
+                        <p class="text-gray-600">Deploying and managing data infrastructure on cloud platforms like AWS.</p>
+                    </div>
+                    <div class="bg-lightBg p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                        <h3 class="text-xl font-semibold mb-3 text-primary">Data Visualization</h3>
+                        <p class="text-gray-600">Creating interactive dashboards and reports for data insights.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tools & Technologies Section -->
+        <section class="py-16 px-4">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Tools & Technologies</h2>
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                    <div class="bg-white p-4 rounded-lg shadow-sm text-center font-semibold">Python</div>
+                    <div class="bg-white p-4 rounded-lg shadow-sm text-center font-semibold">SQL</div>
+                    <div class="bg-white p-4 rounded-lg shadow-sm text-center font-semibold">Azure</div>
+                    <div class="bg-white p-4 rounded-lg shadow-sm text-center font-semibold">Kafka</div>
+                    <div class="bg-white p-4 rounded-lg shadow-sm text-center font-semibold">Spark</div>
+                    <div class="bg-white p-4 rounded-lg shadow-sm text-center font-semibold">Hadoop</div>
+                    <div class="bg-white p-4 rounded-lg shadow-sm text-center font-semibold">Airflow</div>
+                    <div class="bg-white p-4 rounded-lg shadow-sm text-center font-semibold">Snowflake</div>
+                    <div class="bg-white p-4 rounded-lg shadow-sm text-center font-semibold">AWS</div>
+                    <div class="bg-white p-4 rounded-lg shadow-sm text-center font-semibold">Docker</div>
+                    <div class="bg-white p-4 rounded-lg shadow-sm text-center font-semibold">Excel</div>
+                    <div class="bg-white p-4 rounded-lg shadow-sm text-center font-semibold">Power BI</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quick Stats Section -->
+        <section class="py-16 px-4 bg-white">
+            <div class="max-w-6xl mx-auto">
+                <div class="grid grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+                    <div class="bg-lightBg p-6 rounded-lg shadow-sm">
+                        <div class="text-3xl font-bold text-primary mb-2">1</div>
+                        <div class="text-gray-600">Years Experience</div>
+                    </div>
+                    <div class="bg-lightBg p-6 rounded-lg shadow-sm">
+                        <div class="text-3xl font-bold text-primary mb-2">3</div>
+                        <div class="text-gray-600">Projects Completed</div>
+                    </div>
+                    <div class="bg-lightBg p-6 rounded-lg shadow-sm">
+                        <div class="text-3xl font-bold text-primary mb-2">2</div>
+                        <div class="text-gray-600">Articles Published</div>
+                    </div>
+                    <div class="bg-lightBg p-6 rounded-lg shadow-sm">
+                        <div class="text-3xl font-bold text-primary mb-2">3</div>
+                        <div class="text-gray-600">Satisfied Clients</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Professional Experience Section -->
+        <section class="py-16 px-4">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Professional Experience</h2>
+                <div class="bg-white p-8 rounded-lg shadow-sm">
+                    <h3 class="text-xl font-semibold text-primary mb-2">Data Engineer — Digital Egypt Pioneers Initiative (DEPI)</h3>
+                    <p class="text-gray-600 mb-4">2024 - Present</p>
+                    <p class="text-gray-700">Building ETL pipelines using Airflow and Spark, managing big data architecture, and analyzing data to extract valuable insights.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Projects Section -->
+        <section class="py-16 px-4 bg-white">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Featured Projects</h2>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="bg-lightBg p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                        <h3 class="text-xl font-semibold mb-3 text-primary">Titanic Data Analysis</h3>
+                        <p class="text-gray-600">Advanced exploratory analysis using Python and Pandas with interactive visualizations.</p>
+                    </div>
+                    <div class="bg-lightBg p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                        <h3 class="text-xl font-semibold mb-3 text-primary">ETL Pipeline</h3>
+                        <p class="text-gray-600">Building ETL pipeline using Airflow for data processing and storage.</p>
+                    </div>
+                    <div class="bg-lightBg p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                        <h3 class="text-xl font-semibold mb-3 text-primary">Interactive Dashboard</h3>
+                        <p class="text-gray-600">Interactive data visualization using Dash and Plotly.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-16 px-4">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Contact Me</h2>
+                <div class="grid lg:grid-cols-2 gap-12">
+                    <!-- Contact Form -->
+                    <div class="bg-white p-8 rounded-lg shadow-sm">
+                        <form onsubmit="handleSubmit(event)">
+                            <div class="mb-6">
+                                <label for="fullName" class="block text-sm font-semibold mb-2">Full Name</label>
+                                <input type="text" id="fullName" name="fullName" required 
+                                       class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary">
+                            </div>
+                            <div class="mb-6">
+                                <label for="email" class="block text-sm font-semibold mb-2">Email Address</label>
+                                <input type="email" id="email" name="email" required 
+                                       class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary">
+                            </div>
+                            <div class="mb-6">
+                                <label for="message" class="block text-sm font-semibold mb-2">Your Message</label>
+                                <textarea id="message" name="message" rows="5" required 
+                                          class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"></textarea>
+                            </div>
+                            <button type="submit" 
+                                    class="w-full bg-primary text-white py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors">
+                                Send Message
+                            </button>
+                        </form>
+                    </div>
+
+                    <!-- Contact Links -->
+                    <div class="bg-white p-8 rounded-lg shadow-sm">
+                        <h3 class="text-xl font-semibold mb-6">Get in Touch</h3>
+                        <div class="space-y-4">
+                            <a href="https://www.facebook.com/shehab.ahmed.711804?rdid=0UFfXOz5KaukQ28J&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1BEzMmU6iu%2F#" 
+                               target="_blank" rel="noopener noreferrer"
+                               class="flex items-center text-gray-700 hover:text-primary transition-colors">
+                                <span class="font-semibold">Facebook</span>
+                            </a>
+                            <a href="https://www.linkedin.com/in/shehab-eldinahmed" 
+                               target="_blank" rel="noopener noreferrer"
+                               class="flex items-center text-gray-700 hover:text-primary transition-colors">
+                                <span class="font-semibold">LinkedIn</span>
+                            </a>
+                            <a href="https://github.com/shehab-hub-0" 
+                               target="_blank" rel="noopener noreferrer"
+                               class="flex items-center text-gray-700 hover:text-primary transition-colors">
+                                <span class="font-semibold">GitHub</span>
+                            </a>
+                            <a href="mailto:shahbahmed56p@gmail.com" 
+                               class="flex items-center text-gray-700 hover:text-primary transition-colors">
+                                <span class="font-semibold">Gmail: shahbahmed56p@gmail.com</span>
+                            </a>
+                            <a href="https://wa.me/201289910575" 
+                               target="_blank" rel="noopener noreferrer"
+                               class="flex items-center text-gray-700 hover:text-primary transition-colors">
+                                <span class="font-semibold">WhatsApp: 01289910575</span>
+                            </a>
+                            <a href="tel:+201011457319" 
+                               class="flex items-center text-gray-700 hover:text-primary transition-colors">
+                                <span class="font-semibold">Phone: 01011457319</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-8 px-4 text-center">
+        <div class="max-w-6xl mx-auto">
+            <p class="text-lg font-semibold mb-2">Shehab El-Din Ahmed</p>
+            <p class="text-gray-400">© 2024 All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        function handleSubmit(event) {
+            event.preventDefault();
+            const formData = new FormData(event.target);
+            const name = formData.get('fullName');
+            const email = formData.get('email');
+            const message = formData.get('message');
+            
+            // Simple alert for demonstration
+            alert(`Thank you ${name}! Your message has been received. I'll get back to you at ${email} soon.`);
+            
+            // Alternative: Open default email client
+            // window.location.href = `mailto:shahbahmed56p@gmail.com?subject=Contact from ${name}&body=${message}%0D%0A%0D%0AFrom: ${email}`;
+        }
+    </script>
+</body>
+</html>
